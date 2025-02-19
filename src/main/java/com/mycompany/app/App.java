@@ -1,16 +1,17 @@
 package com.mycompany.app;
 
+import java.util.logging.Logger;
+
 /**
  * Hello world!
  */
 public class App {
 
+    private static final Logger logger = Logger.getLogger(App.class.getName());
     private static final String MESSAGE = "Hello World!";
 
-    public App() {}
-
     public static void main(String[] args) {
-        System.out.println(MESSAGE);
+        logger.info(MESSAGE);
     }
 
     public String getMessage() {
